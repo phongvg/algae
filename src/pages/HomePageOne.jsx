@@ -23,16 +23,13 @@ import BottomFooter from "../components/BottomFooter";
 import ScrollToTop from "react-scroll-to-top";
 import ColorInit from "../helper/ColorInit";
 const HomePageOne = () => {
-
   return (
-
     <>
-
       {/* Preloader */}
       <Preloader />
 
       {/* ScrollToTop */}
-      <ScrollToTop smooth color="#299E60" />
+      <ScrollToTop smooth color='#299E60' />
 
       {/* ColorInit */}
       <ColorInit color={false} />
@@ -47,16 +44,16 @@ const HomePageOne = () => {
       <FeatureOne />
 
       {/* PromotionalOne */}
-      <PromotionalOne />
+      {/* <PromotionalOne /> */}
 
       {/* FlashSalesOne */}
-      <FlashSalesOne />
+      {/* <FlashSalesOne /> */}
 
       {/* ProductListOne */}
       <ProductListOne />
 
       {/* OfferOne */}
-      <OfferOne />
+      {/* <OfferOne /> */}
 
       {/* RecommendedOne */}
       <RecommendedOne />
@@ -65,25 +62,25 @@ const HomePageOne = () => {
       <HotDealsOne />
 
       {/* TopVendorsOne */}
-      <TopVendorsOne />
+      {/* <TopVendorsOne /> */}
 
       {/* BestSellsOne */}
       <BestSellsOne />
 
       {/* DeliveryOne */}
-      <DeliveryOne />
+      {/* <DeliveryOne /> */}
 
       {/* OrganicOne */}
-      <OrganicOne />
+      {/* <OrganicOne /> */}
 
       {/* ShortProductOne */}
-      <ShortProductOne />
+      {/* <ShortProductOne /> */}
 
       {/* BrandOne */}
-      <BrandOne />
+      {/* <BrandOne /> */}
 
       {/* NewArrivalOne */}
-      <NewArrivalOne />
+      {/* <NewArrivalOne /> */}
 
       {/* ShippingOne */}
       <ShippingOne />
@@ -96,8 +93,6 @@ const HomePageOne = () => {
 
       {/* BottomFooter */}
       <BottomFooter />
-
-
     </>
   );
 };
