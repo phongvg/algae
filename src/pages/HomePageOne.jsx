@@ -25,74 +25,32 @@ import ColorInit from "../helper/ColorInit";
 const HomePageOne = () => {
   return (
     <>
-      {/* Preloader */}
       <Preloader />
 
-      {/* ScrollToTop */}
       <ScrollToTop smooth color='#299E60' />
 
-      {/* ColorInit */}
       <ColorInit color={false} />
 
-      {/* HeaderOne */}
       <HeaderOne />
 
-      {/* BannerOne */}
       <BannerOne />
 
-      {/* FeatureOne */}
       <FeatureOne />
 
-      {/* PromotionalOne */}
-      {/* <PromotionalOne /> */}
-
-      {/* FlashSalesOne */}
-      {/* <FlashSalesOne /> */}
-
-      {/* ProductListOne */}
       <ProductListOne />
 
-      {/* OfferOne */}
-      {/* <OfferOne /> */}
-
-      {/* RecommendedOne */}
       <RecommendedOne />
 
-      {/* HotDealsOne */}
       <HotDealsOne />
 
-      {/* TopVendorsOne */}
-      {/* <TopVendorsOne /> */}
-
-      {/* BestSellsOne */}
       <BestSellsOne />
 
-      {/* DeliveryOne */}
-      {/* <DeliveryOne /> */}
-
-      {/* OrganicOne */}
-      {/* <OrganicOne /> */}
-
-      {/* ShortProductOne */}
-      {/* <ShortProductOne /> */}
-
-      {/* BrandOne */}
-      {/* <BrandOne /> */}
-
-      {/* NewArrivalOne */}
-      {/* <NewArrivalOne /> */}
-
-      {/* ShippingOne */}
       <ShippingOne />
 
-      {/* NewsletterOne */}
       <NewsletterOne />
 
       {/* FooterOne */}
       <FooterOne />
-
-      {/* BottomFooter */}
-      <BottomFooter />
     </>
   );
 };
