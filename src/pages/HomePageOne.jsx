@@ -35,9 +35,9 @@ const HomePageOne = () => {
 
       <BannerOne />
 
-      <FeatureOne />
+      {/* <FeatureOne /> */}
 
-      <ProductListOne />
+      {/* <ProductListOne /> */}
 
       <RecommendedOne />
 

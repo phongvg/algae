@@ -6,12 +6,12 @@ const FooterOne = () => {
     <footer className='footer py-120'>
       <img src='assets/images/bg/body-bottom-bg.png' alt='BG' className='body-bottom-bg' />
       <div className='container container-lg'>
-        <div className='footer-item-wrapper d-flex align-items-start flex-wrap'>
+        <div className='footer-item-wrapper d-flex align-items-start justify-content-between flex-wrap'>
           <div className='footer-item'>
             <div className='footer-item__logo'>
               <Link to='/'>
                 {" "}
-                <img src='assets/images/logo/logo.png' alt='' />
+                <img src='assets/images/logo/logo.jpg' alt='' />
               </Link>
             </div>
             <div className='flex-align gap-16 mb-16'>
@@ -131,15 +131,7 @@ const FooterOne = () => {
           </div>
           <div className='footer-item'>
             <h6 className=''>Mua sắm ngay</h6>
-            <p className='mb-16'>Kết nối với chúng tôi. Tải ngay</p>
-            <div className='flex-align gap-8 my-32'>
-              <Link to='/https://www.apple.com/store' className=''>
-                <img src='assets/images/thumbs/store-img1.png' alt='' />
-              </Link>
-              <Link to='/https://play.google.com/store/apps?hl=en' className=''>
-                <img src='assets/images/thumbs/store-img2.png' alt='' />
-              </Link>
-            </div>
+            <p className='mb-16'>Kết nối với chúng tôi</p>
             <ul className='flex-align gap-16'>
               <li>
                 <Link

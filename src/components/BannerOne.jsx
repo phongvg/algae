@@ -39,33 +39,16 @@ const BannerOne = () => {
   return (
     <div className='banner'>
       <div className='container container-lg'>
-        <div className='banner-item rounded-24 overflow-hidden position-relative arrow-center'>
-          <a
-            href='#featureSection'
-            className='scroll-down w-84 h-84 text-center flex-center bg-main-600 rounded-circle border border-5 text-white border-white position-absolute start-50 translate-middle-x bottom-0 hover-bg-main-800'>
-            <span className='icon line-height-0'>
-              <i className='ph ph-caret-double-down' />
-            </span>
-          </a>
-          <img
+        <div className='rounded-24 overflow-hidden position-relative arrow-center'>
+          {/* <img
             src='/assets/images/bg/banner-bg.png'
             alt=''
             className='banner-img position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1 object-fit-cover rounded-24'
-          />
-          <div className='flex-align'></div>
+          /> */}
           <div className='banner-slider'>
             <Slider {...settings}>
               <div className='banner-slider__item'>
                 <div className='banner-slider__inner flex-between position-relative'>
-                  <div className='banner-item__content'>
-                    <h1 className='banner-item__title bounce'>Tảo Xoắn - Năng lượng từ thiên nhiên!</h1>
-                    <Link to='/shop' className='btn btn-main d-inline-flex align-items-center rounded-pill gap-8'>
-                      Mua ngay{" "}
-                      <span className='icon text-xl d-flex'>
-                        <i className='ph ph-shopping-cart-simple' />{" "}
-                      </span>
-                    </Link>
-                  </div>
                   <div className='banner-item__thumb'>
                     <img src='https://vastcom.vn/wp-content/uploads/2023/11/22banner-6-copy.jpg' alt='' />
                   </div>
@@ -73,15 +56,6 @@ const BannerOne = () => {
               </div>
               <div className='banner-slider__item'>
                 <div className='banner-slider__inner flex-between position-relative'>
-                  <div className='banner-item__content'>
-                    <h1 className='banner-item__title'>Tảo Xoắn - Dinh dưỡng toàn diện!</h1>
-                    <Link to='/shop' className='btn btn-main d-inline-flex align-items-center rounded-pill gap-8'>
-                      Mua ngay{" "}
-                      <span className='icon text-xl d-flex'>
-                        <i className='ph ph-shopping-cart-simple' />{" "}
-                      </span>
-                    </Link>
-                  </div>
                   <div className='banner-item__thumb'>
                     <img src='https://vastcom.vn/wp-content/uploads/2023/11/banner-111-1.jpg' alt='' />
                   </div>
