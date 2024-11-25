@@ -1,164 +1,98 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Account = () => {
-    return (
-        <section className="account py-80">
-            <div className="container container-lg">
-                <form action="#">
-                    <div className="row gy-4">
-                        {/* Login Card Start */}
-                        <div className="col-xl-6 pe-xl-5">
-                            <div className="border border-gray-100 hover-border-main-600 transition-1 rounded-16 px-24 py-40 h-100">
-                                <h6 className="text-xl mb-32">Login</h6>
-                                <div className="mb-24">
-                                    <label
-                                        htmlFor="username"
-                                        className="text-neutral-900 text-lg mb-8 fw-medium"
-                                    >
-                                        Username or email address <span className="text-danger">*</span>{" "}
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="common-input"
-                                        id="username"
-                                        placeholder="First Name"
-                                    />
-                                </div>
-                                <div className="mb-24">
-                                    <label
-                                        htmlFor="password"
-                                        className="text-neutral-900 text-lg mb-8 fw-medium"
-                                    >
-                                        Password
-                                    </label>
-                                    <div className="position-relative">
-                                        <input
-                                            type="password"
-                                            className="common-input"
-                                            id="password"
-                                            placeholder="Enter Password"
-                                            defaultValue="password"
-                                        />
-                                        <span
-                                            className="toggle-password position-absolute top-50 inset-inline-end-0 me-16 translate-middle-y cursor-pointer ph ph-eye-slash"
-                                            id="#password"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="mb-24 mt-48">
-                                    <div className="flex-align gap-48 flex-wrap">
-                                        <button type="submit" className="btn btn-main py-18 px-40">
-                                            Log in
-                                        </button>
-                                        <div className="form-check common-check">
-                                            <input
-                                                className="form-check-input"
-                                                type="checkbox"
-                                                defaultValue=""
-                                                id="remember"
-                                            />
-                                            <label
-                                                className="form-check-label flex-grow-1"
-                                                htmlFor="remember"
-                                            >
-                                                Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mt-48">
-                                    <Link
-                                        to="#"
-                                        className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
-                                    >
-                                        Forgot your password?
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Login Card End */}
-                        {/* Register Card Start */}
-                        <div className="col-xl-6">
-                            <div className="border border-gray-100 hover-border-main-600 transition-1 rounded-16 px-24 py-40">
-                                <h6 className="text-xl mb-32">Register</h6>
-                                <div className="mb-24">
-                                    <label
-                                        htmlFor="usernameTwo"
-                                        className="text-neutral-900 text-lg mb-8 fw-medium"
-                                    >
-                                        Username <span className="text-danger">*</span>{" "}
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="common-input"
-                                        id="usernameTwo"
-                                        placeholder="Write a username"
-                                    />
-                                </div>
-                                <div className="mb-24">
-                                    <label
-                                        htmlFor="emailTwo"
-                                        className="text-neutral-900 text-lg mb-8 fw-medium"
-                                    >
-                                        Email address
-                                        <span className="text-danger">*</span>{" "}
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="common-input"
-                                        id="emailTwo"
-                                        placeholder="Enter Email Address"
-                                    />
-                                </div>
-                                <div className="mb-24">
-                                    <label
-                                        htmlFor="enter-password"
-                                        className="text-neutral-900 text-lg mb-8 fw-medium"
-                                    >
-                                        Password
-                                        <span className="text-danger">*</span>
-                                    </label>
-                                    <div className="position-relative">
-                                        <input
-                                            type="password"
-                                            className="common-input"
-                                            id="enter-password"
-                                            placeholder="Enter Password"
-                                            defaultValue="password"
-                                        />
-                                        <span
-                                            className="toggle-password position-absolute top-50 inset-inline-end-0 me-16 translate-middle-y cursor-pointer ph ph-eye-slash"
-                                            id="#enter-password"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="my-48">
-                                    <p className="text-gray-500">
-                                        Your personal data will be used to process your order, support
-                                        your experience throughout this website, and for other purposes
-                                        described in our
-                                        <Link to="#" className="text-main-600 text-decoration-underline">
-                                            {" "}
-                                            privacy policy
-                                        </Link>
-                                        .
-                                    </p>
-                                </div>
-                                <div className="mt-48">
-                                    <button type="submit" className="btn btn-main py-18 px-40">
-                                        Register
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Register Card End */}
+  return (
+    <section className='py-20 account'>
+      <div className='container container-lg'>
+        <form action='#'>
+          <div className='row gy-4'>
+            {/* Login Card Start */}
+            <div className='col-xl-6 pe-xl-5'>
+              <div className='px-24 py-40 border border-gray-100 hover-border-main-600 transition-1 rounded-16 h-100'>
+                <h6 className='mb-32 text-xl'>Đăng nhập</h6>
+                <div className='mb-24'>
+                  <label htmlFor='username' className='mb-8 text-lg text-neutral-900 fw-medium'>
+                    Tên đăng nhập hoặc email <span className='text-danger'>*</span>{" "}
+                  </label>
+                  <input type='text' className='common-input' id='username' placeholder='' />
+                </div>
+                <div className='mb-24'>
+                  <label htmlFor='password' className='mb-8 text-lg text-neutral-900 fw-medium'>
+                    Mật khẩu
+                  </label>
+                  <div className='position-relative'>
+                    <input type='password' className='common-input' id='password' placeholder='' />
+                    <span
+                      className='cursor-pointer toggle-password position-absolute top-50 inset-inline-end-0 me-16 translate-middle-y ph ph-eye-slash'
+                      id='#password'
+                    />
+                  </div>
+                </div>
+                <div className='mt-20 mb-24'>
+                  <div className='flex-wrap gap-48 flex-align'>
+                    <button type='submit' className='px-40 btn btn-main py-18'>
+                      Đăng nhập
+                    </button>
+                    <div className='form-check common-check'>
+                      <input className='form-check-input' type='checkbox' defaultValue='' id='remember' />
+                      <label className='form-check-label flex-grow-1' htmlFor='remember'>
+                        Lưu thông tin đăng nhập
+                      </label>
                     </div>
-                </form>
+                  </div>
+                </div>
+                <div className='mt-20'>
+                  <Link to='#' className='text-sm text-danger-600 fw-semibold hover-text-decoration-underline'>
+                    Quên mật khẩu?
+                  </Link>
+                </div>
+              </div>
             </div>
-        </section>
+            {/* Login Card End */}
+            {/* Register Card Start */}
+            <div className='col-xl-6'>
+              <div className='px-24 py-40 border border-gray-100 hover-border-main-600 transition-1 rounded-16'>
+                <h6 className='mb-32 text-xl'>Đăng ký</h6>
+                <div className='mb-24'>
+                  <label htmlFor='usernameTwo' className='mb-8 text-lg text-neutral-900 fw-medium'>
+                    Tên đăng nhập <span className='text-danger'>*</span>{" "}
+                  </label>
+                  <input type='text' className='common-input' id='usernameTwo' placeholder='' />
+                </div>
+                <div className='mb-24'>
+                  <label htmlFor='emailTwo' className='mb-8 text-lg text-neutral-900 fw-medium'>
+                    Địa chỉ email
+                    <span className='text-danger'>*</span>{" "}
+                  </label>
+                  <input type='email' className='common-input' id='emailTwo' placeholder='' />
+                </div>
+                <div className='mb-24'>
+                  <label htmlFor='enter-password' className='mb-8 text-lg text-neutral-900 fw-medium'>
+                    Mật khẩu
+                    <span className='text-danger'>*</span>
+                  </label>
+                  <div className='position-relative'>
+                    <input type='password' className='common-input' id='enter-password' placeholder='' />
+                    <span
+                      className='cursor-pointer toggle-password position-absolute top-50 inset-inline-end-0 me-16 translate-middle-y ph ph-eye-slash'
+                      id='#enter-password'
+                    />
+                  </div>
+                </div>
+                <div className='mt-20'>
+                  <button type='submit' className='px-40 btn btn-main py-18'>
+                    Tạo tài khoản
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* Register Card End */}
+          </div>
+        </form>
+      </div>
+    </section>
+  );
+};
 
-    )
-}
-
-export default Account
+export default Account;

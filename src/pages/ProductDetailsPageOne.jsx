@@ -27,7 +27,7 @@ const ProductDetailsPageOne = () => {
       <HeaderOne />
 
       {/* Breadcrumb */}
-      <BreadcrumbTwo title={"Chi tiết sản phẩm"} />
+      <BreadcrumbTwo subtitle={"Chi tiết sản phẩm"} title={"Viên uống NATTO KINAZA"} />
 
       {/* ProductDetailsOne */}
       <ProductDetailsOne />
@@ -43,9 +43,6 @@ const ProductDetailsPageOne = () => {
 
       {/* FooterTwo */}
       <FooterOne />
-
-      {/* BottomFooter */}
-      <BottomFooter />
     </>
   );
 };

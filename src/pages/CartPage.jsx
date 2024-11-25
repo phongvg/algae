@@ -1,35 +1,31 @@
 import React from "react";
 import Preloader from "../helper/Preloader";
 import ColorInit from "../helper/ColorInit";
-import HeaderTwo from "../components/HeaderTwo";
-import Breadcrumb from "../components/Breadcrumb";
-import FooterTwo from "../components/FooterTwo";
+import HeaderOne from "../components/HeaderOne";
+import BreadcrumbTwo from "../components/BreadcrumbTwo";
+import FooterOne from "../components/FooterOne";
 import BottomFooter from "../components/BottomFooter";
 import CartSection from "../components/CartSection";
 import ShippingOne from "../components/ShippingOne";
 import ScrollToTop from "react-scroll-to-top";
 
-
 const CartPage = () => {
-
-
-
   return (
     <>
       {/* ColorInit */}
-      <ColorInit color={true} />
+      <ColorInit color={false} />
 
       {/* ScrollToTop */}
-      <ScrollToTop smooth color="#FA6400" />
+      <ScrollToTop smooth color='#FA6400' />
 
       {/* Preloader */}
       <Preloader />
 
-      {/* HeaderTwo */}
-      <HeaderTwo category={true} />
+      {/* HeaderOne */}
+      <HeaderOne category={true} />
 
-      {/* Breadcrumb */}
-      <Breadcrumb title={"Cart"} />
+      {/* BreadcrumbTwo */}
+      <BreadcrumbTwo title={"Giỏ hàng"} />
 
       {/* CartSection */}
       <CartSection />
@@ -37,13 +33,8 @@ const CartPage = () => {
       {/* ShippingOne */}
       <ShippingOne />
 
-      {/* FooterTwo */}
-      <FooterTwo />
-
-      {/* BottomFooter */}
-      <BottomFooter />
-
-
+      {/* FooterOne */}
+      <FooterOne />
     </>
   );
 };

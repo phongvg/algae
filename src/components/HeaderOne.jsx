@@ -74,15 +74,15 @@ const HeaderOne = () => {
         <button
           onClick={handleSearchToggle}
           type='button'
-          className='search-box__close position-absolute inset-block-start-0 inset-inline-end-0 m-16 w-48 h-48 border border-gray-100 rounded-circle flex-center text-white hover-text-gray-800 hover-bg-white text-2xl transition-1'>
+          className='w-48 h-48 m-16 text-2xl text-white border border-gray-100 search-box__close position-absolute inset-block-start-0 inset-inline-end-0 rounded-circle flex-center hover-text-gray-800 hover-bg-white transition-1'>
           <i className='ph ph-x' />
         </button>
         <div className='container'>
           <div className='position-relative'>
-            <input type='text' className='form-control py-16 px-24 text-xl rounded-pill pe-64' placeholder='Search for a product or brand' />
+            <input type='text' className='px-24 py-16 text-xl form-control rounded-pill pe-64' placeholder='Search for a product or brand' />
             <button
               type='submit'
-              className='w-48 h-48 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
+              className='w-48 h-48 text-xl text-white bg-main-600 rounded-circle flex-center position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
               <i className='ph ph-magnifying-glass' />
             </button>
           </div>
@@ -116,7 +116,7 @@ const HeaderOne = () => {
 
               {/* Shop Menu */}
               <li className='nav-menu__item'>
-                <Link to='#' className='nav-menu__link'>
+                <Link to='/shop' className='nav-menu__link'>
                   Sản phẩm
                 </Link>
               </li>
@@ -143,11 +143,11 @@ const HeaderOne = () => {
       {/* ======================= Middle Top Start ========================= */}
       <div className='header-top bg-main-600 flex-between'>
         <div className='container container-lg'>
-          <div className='flex-between flex-wrap gap-8'>
+          <div className='flex-wrap gap-8 flex-between'>
             <div></div>
-            <ul className='header-top__right flex-align flex-wrap'>
+            <ul className='flex-wrap header-top__right flex-align'>
               <li className='border-right-item'>
-                <Link to='/account' className='text-white text-sm py-8 flex-align gap-6'>
+                <Link to='/account' className='gap-6 py-8 text-sm text-white flex-align'>
                   <span className='icon text-md d-flex'>
                     {" "}
                     <i className='ph ph-user-circle' />{" "}
@@ -161,7 +161,7 @@ const HeaderOne = () => {
       </div>
       {/* ======================= Middle Top End ========================= */}
       {/* ======================= Middle Header Start ========================= */}
-      <header className='header-middle bg-color-one border-bottom border-gray-100'>
+      <header className='border-gray-100 header-middle bg-color-one border-bottom'>
         <div className='container container-lg'>
           <nav className='header-inner flex-between'>
             {/* Logo Start */}
@@ -172,9 +172,9 @@ const HeaderOne = () => {
             </div>
             {/* Logo End  */}
             {/* form location Start */}
-            <form action='#' className='flex-align flex-wrap form-location-wrapper'>
-              <div className='search-category d-flex h-48 select-border-end-0 radius-end-0 search-form d-sm-flex d-none'>
-                <select defaultValue={1} className='js-example-basic-single border border-gray-200 border-end-0' name='state'>
+            <form action='#' className='flex-wrap flex-align form-location-wrapper'>
+              <div className='h-48 search-category d-flex select-border-end-0 radius-end-0 search-form d-sm-flex d-none'>
+                <select defaultValue={1} className='border border-gray-200 js-example-basic-single border-end-0' name='state'>
                   <option value={1}>Tất cả danh mục</option>
                   {CATEGORIES.map((category, index) => (
                     <option key={index} value={1}>
@@ -190,7 +190,7 @@ const HeaderOne = () => {
                   />
                   <button
                     type='submit'
-                    className='w-32 h-32 bg-main-600 rounded-circle flex-center text-xl text-white position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
+                    className='w-32 h-32 text-xl text-white bg-main-600 rounded-circle flex-center position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
                     <i className='ph ph-magnifying-glass' />
                   </button>
                 </div>
@@ -199,25 +199,25 @@ const HeaderOne = () => {
             {/* form location start */}
             {/* Header Middle Right start */}
             <div className='header-right flex-align d-lg-block d-none'>
-              <div className='flex-align flex-wrap gap-12'>
-                <button type='button' className='search-icon flex-align d-lg-none d-flex gap-4 item-hover'>
+              <div className='flex-wrap gap-12 flex-align'>
+                <button type='button' className='gap-4 search-icon flex-align d-lg-none d-flex item-hover'>
                   <span className='text-2xl text-gray-700 d-flex position-relative item-hover__text'>
                     <i className='ph ph-magnifying-glass' />
                   </span>
                 </button>
-                <Link to='/cart' className='flex-align gap-4 item-hover'>
-                  <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
+                <Link to='/cart' className='gap-4 flex-align item-hover'>
+                  <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                     <i className='ph ph-heart' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>2</span>
+                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
                   </span>
-                  <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>Yêu thích</span>
+                  <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Yêu thích</span>
                 </Link>
-                <Link to='/cart' className='flex-align gap-4 item-hover'>
-                  <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
+                <Link to='/cart' className='gap-4 flex-align item-hover'>
+                  <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                     <i className='ph ph-shopping-cart-simple' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>2</span>
+                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
                   </span>
-                  <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>Giỏ hàng</span>
+                  <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Giỏ hàng</span>
                 </Link>
               </div>
             </div>
@@ -227,21 +227,21 @@ const HeaderOne = () => {
       </header>
       {/* ======================= Middle Header End ========================= */}
       {/* ==================== Header Start Here ==================== */}
-      <header className={`header bg-white border-bottom border-gray-100 ${scroll && "fixed-header"}`}>
+      <header className={`header bg-white border-bottom border-gray-100 ${scroll && "fixed-header"}`} style={{ zIndex: 999 }}>
         <div className='container container-lg'>
-          <nav className='header-inner d-flex justify-content-between gap-8'>
+          <nav className='gap-8 header-inner d-flex justify-content-between'>
             <div className='flex-align menu-category-wrapper'>
               {/* Category Dropdown Start */}
               <div className='category on-hover-item'>
                 <button
                   onClick={handleCategoryToggle}
                   type='button'
-                  className='category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100 text-heading'>
-                  <span className='icon text-2xl d-xs-flex d-none'>
+                  className='gap-8 p-16 border-gray-100 category__button flex-align fw-medium border-end border-start text-heading'>
+                  <span className='text-2xl icon d-xs-flex d-none'>
                     <i className='ph ph-dots-nine' />
                   </span>
                   <span className='d-sm-flex d-none'>Tất cả danh mục</span>
-                  <span className='arrow-icon text-xl d-flex'>
+                  <span className='text-xl arrow-icon d-flex'>
                     <i className='ph ph-caret-down' />
                   </span>
                 </button>
@@ -255,21 +255,24 @@ const HeaderOne = () => {
                       setActiveIndexCat(null);
                     }}
                     type='button'
-                    className='close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex'>
+                    className='mt-4 text-xl close-responsive-dropdown rounded-circle position-absolute inset-inline-end-0 inset-block-start-0 me-8 d-lg-none d-flex'>
                     {" "}
                     <i className='ph ph-x' />{" "}
                   </button>
                   {/* Logo Start */}
-                  <div className='logo px-16 d-lg-none d-block'>
+                  <div className='px-16 logo d-lg-none d-block'>
                     <Link to='/' className='link'>
                       <img src='assets/images/logo/logo.jpg' alt='Logo' />
                     </Link>
                   </div>
                   {/* Logo End */}
-                  <ul className='scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto'>
+                  <ul className='p-0 py-8 overflow-y-auto scroll-sm w-300 max-h-400'>
                     {CATEGORIES.map((category, index) => (
                       <li key={index} className={`has-submenus-submenu ${activeIndexCat === 0 ? "active" : ""}`}>
-                        <Link onClick={() => setActiveIndexCat(null)} to='#' className='text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0'>
+                        <Link
+                          onClick={() => setActiveIndexCat(null)}
+                          to='/shop'
+                          className='gap-8 px-16 py-12 text-gray-500 text-15 flex-align rounded-0'>
                           <span>{category.title}</span>
                         </Link>
                       </li>
@@ -283,12 +286,12 @@ const HeaderOne = () => {
                 {/* Nav Menu Start */}
                 <ul className='nav-menu flex-align '>
                   <li className='nav-menu__item'>
-                    <Link to='#' className='nav-menu__link'>
+                    <Link to='/' className='nav-menu__link'>
                       Trang chủ
                     </Link>
                   </li>
                   <li className='nav-menu__item'>
-                    <Link to='#' className='nav-menu__link'>
+                    <Link to='/shop' className='nav-menu__link'>
                       Sản phẩm
                     </Link>
                   </li>
@@ -309,36 +312,36 @@ const HeaderOne = () => {
             </div>
             {/* Header Right start */}
             <div className='header-right flex-align'>
-              <Link to='/tel:01234567890' className='bg-main-600 text-white p-12 h-100 hover-bg-main-800 flex-align gap-8 text-lg d-lg-flex d-none'>
+              <Link to='/tel:01234567890' className='gap-8 p-12 text-lg text-white bg-main-600 h-100 hover-bg-main-800 flex-align d-lg-flex d-none'>
                 <div className='d-flex text-32'>
                   <i className='ph ph-phone-call' />
                 </div>
                 01- 234 567 890
               </Link>
               <div className='me-16 d-lg-none d-block'>
-                <div className='flex-align flex-wrap gap-12'>
-                  <button onClick={handleSearchToggle} type='button' className='search-icon flex-align d-lg-none d-flex gap-4 item-hover'>
+                <div className='flex-wrap gap-12 flex-align'>
+                  <button onClick={handleSearchToggle} type='button' className='gap-4 search-icon flex-align d-lg-none d-flex item-hover'>
                     <span className='text-2xl text-gray-700 d-flex position-relative item-hover__text'>
                       <i className='ph ph-magnifying-glass' />
                     </span>
                   </button>
-                  <Link to='/cart' className='flex-align gap-4 item-hover'>
-                    <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
+                  <Link to='/cart' className='gap-4 flex-align item-hover'>
+                    <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                       <i className='ph ph-heart' />
-                      <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>2</span>
+                      <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
                     </span>
-                    <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>Yêu thích</span>
+                    <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Yêu thích</span>
                   </Link>
-                  <Link to='/cart' className='flex-align gap-4 item-hover'>
-                    <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
+                  <Link to='/cart' className='gap-4 flex-align item-hover'>
+                    <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                       <i className='ph ph-shopping-cart-simple' />
-                      <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>2</span>
+                      <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
                     </span>
-                    <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>Giỏ hàng</span>
+                    <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Giỏ hàng</span>
                   </Link>
                 </div>
               </div>
-              <button onClick={handleMenuToggle} type='button' className='toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex'>
+              <button onClick={handleMenuToggle} type='button' className='text-4xl text-gray-800 toggle-mobileMenu d-lg-none ms-3n d-flex'>
                 {" "}
                 <i className='ph ph-list' />{" "}
               </button>
