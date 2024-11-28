@@ -66,7 +66,6 @@
   &__thumb {
     img {
       @include msm-screen {
-        max-width: 350px;
         width: 100%;
       }
     }
