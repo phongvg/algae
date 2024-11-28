@@ -208,14 +208,14 @@ const HeaderOne = () => {
                 <Link to='/cart' className='gap-4 flex-align item-hover'>
                   <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                     <i className='ph ph-heart' />
-                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
+                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>0</span>
                   </span>
                   <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Yêu thích</span>
                 </Link>
                 <Link to='/cart' className='gap-4 flex-align item-hover'>
                   <span className='mt-6 text-2xl text-gray-700 d-flex position-relative me-6 item-hover__text'>
                     <i className='ph ph-shopping-cart-simple' />
-                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>2</span>
+                    <span className='w-16 h-16 text-xs text-white flex-center rounded-circle bg-main-600 position-absolute top-n6 end-n4'>0</span>
                   </span>
                   <span className='text-gray-500 text-md item-hover__text d-none d-lg-flex'>Giỏ hàng</span>
                 </Link>
