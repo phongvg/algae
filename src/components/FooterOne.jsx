@@ -26,7 +26,7 @@ const FooterOne = () => {
               </span>
               <div className='flex-align gap-16 flex-wrap'>
                 <Link to='/tel:+00123456789' className='text-md text-gray-900 hover-text-main-600'>
-                  Hotline: 0916.452.567- 0989.432.367
+                  Hotline: 0982-685-849
                 </Link>
               </div>
             </div>
