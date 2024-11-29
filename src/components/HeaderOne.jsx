@@ -183,7 +183,7 @@ const HeaderOne = () => {
                     strokeWidth='2'
                     strokeLinecap='round'
                     strokeLinejoin='round'
-                    className='top-50 translate-middle-y position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
+                    className='position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
                     <path d='m6 9 6 6 6-6' />
                   </svg>
                 </div>
