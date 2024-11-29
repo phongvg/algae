@@ -163,18 +163,34 @@ const HeaderOne = () => {
             {/* form location Start */}
             <form action='#' className='flex-wrap flex-align form-location-wrapper'>
               <div className='h-48 search-category d-flex select-border-end-0 radius-end-0 search-form d-sm-flex d-none'>
-                <select defaultValue={1} className='border border-gray-200 rounded-start-pill js-example-basic-single border-end-0' name='state'>
-                  <option value={1}>Tất cả danh mục</option>
-                  {CATEGORIES.map((category, index) => (
-                    <option key={index} value={1}>
-                      {category.title}
-                    </option>
-                  ))}
-                </select>
-                <div className='search-form__wrapper position-relative'>
+                <div className='position-relative h-100'>
+                  <select defaultValue={1} className='border border-gray-200 rounded-start-pill js-example-basic-single border-end-0' name='state'>
+                    <option value={1}>Tất cả danh mục</option>
+                    {CATEGORIES.map((category, index) => (
+                      <option key={index} value={1}>
+                        {category.title}
+                      </option>
+                    ))}
+                  </select>
+
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    className='top-50 translate-middle-y position-absolute top-50 translate-middle-y inset-inline-end-0 me-8'>
+                    <path d='m6 9 6 6 6-6' />
+                  </svg>
+                </div>
+                <div className='search-form__wrapper position-relative h-100'>
                   <input
                     type='text'
-                    className='search-form__input common-input py-13 ps-16 pe-18 rounded-end-pill pe-44'
+                    className='search-form__input common-input py-13 ps-16 pe-18 h-100 rounded-end-pill pe-44'
                     placeholder='Nhập tên sản phẩm hoặc tên thương hiệu...'
                   />
                   <button
